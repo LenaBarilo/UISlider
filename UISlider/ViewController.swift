@@ -64,4 +64,15 @@ class ViewController: UIViewController {
         gLabel.text = "0.5"
         bLabel.text = "0.5"
     }
+    
+    // Share functionality
+    @IBAction func shareColor(sender: AnyObject) {
+        
+        let activityViewController = UIActivityViewController(
+            activityItems: ["This color is awesome! \nRed value is \(redControl.value.description), green value is \(greenControl.value.description) and blue value is \(blueControl.value.description))" as NSString],
+            applicationActivities: nil)
+        
+        presentViewController(activityViewController, animated: true, completion: nil)
+    }
+    
 }

@@ -17,27 +17,37 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueControl: UISlider!
     @IBOutlet weak var instructionalLabel: UILabel!
     
+    @IBOutlet weak var rLabel: UILabel!
+    @IBOutlet weak var gLabel: UILabel!
+    @IBOutlet weak var bLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         colorView.layer.cornerRadius = 5
         colorView.layer.borderWidth = 1
-        
         colorView.backgroundColor = UIColor.grayColor()
     }
-    
-    
     
     @IBAction func changeColorComponent(sender: AnyObject) {
         
         instructionalLabel.hidden = true
-        let r: CGFloat = CGFloat(self.redControl.value)
+        var r: CGFloat = CGFloat(self.redControl.value)
         let g: CGFloat = CGFloat(self.greenControl.value)
         let b: CGFloat = CGFloat(self.blueControl.value)
         
         colorView.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-        //r.text = "\(value)"
+
+        returnColorValue()
+    }
+    
+    // Return UI Slider color value numerically
+    func returnColorValue() {
+
+        rLabel.text = redControl.value.description
+        gLabel.text = greenControl.value.description
+        bLabel.text = blueControl.value.description
     }
     
     @IBAction func reserColorView(sender: AnyObject) {
@@ -45,8 +55,13 @@ class ViewController: UIViewController {
         instructionalLabel.hidden = false
         
         colorView.backgroundColor = UIColor.grayColor()
+        
         redControl.value = 0.5
         greenControl.value = 0.5
         blueControl.value = 0.5
+        
+        rLabel.text = "0.5"
+        gLabel.text = "0.5"
+        bLabel.text = "0.5"
     }
 }

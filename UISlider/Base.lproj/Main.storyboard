@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMx-ea-UCe">
@@ -22,7 +22,7 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="50" y="128" width="63" height="21"/>
+                                    <rect key="frame" x="25" y="128" width="63" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ll-vH-PLt">
@@ -31,7 +31,7 @@
                                 <color key="textColor" red="0.15294118225574493" green="0.79607850313186646" blue="0.21960785984992981" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="50" y="178" width="70" height="21"/>
+                                    <rect key="frame" x="25" y="178" width="70" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql6-eS-OPE">
@@ -40,14 +40,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="50" y="228" width="42" height="21"/>
+                                    <rect key="frame" x="25" y="228" width="42" height="21"/>
                                 </variation>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ATF-wd-B3m">
                                 <rect key="frame" x="136" y="96" width="118" height="31"/>
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="124" width="214" height="31"/>
+                                    <rect key="frame" x="100" y="124" width="200" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="jQv-Vr-luv"/>
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="136" y="146" width="118" height="31"/>
                                 <color key="tintColor" red="0.15294118230000001" green="0.79607850309999995" blue="0.2196078598" alpha="1" colorSpace="deviceRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="174" width="214" height="31"/>
+                                    <rect key="frame" x="100" y="174" width="200" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="fqL-gr-q9C"/>
@@ -67,7 +67,7 @@
                                 <rect key="frame" x="136" y="196" width="118" height="31"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="224" width="214" height="31"/>
+                                    <rect key="frame" x="100" y="224" width="200" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Zda-yy-8kV"/>
@@ -104,6 +104,33 @@
                                     <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 </variation>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSa-Eg-6Vf">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="320" y="128" width="78" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWN-yf-taB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.15294118230000001" green="0.79607850309999995" blue="0.2196078598" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="320" y="178" width="78" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CJ-A6-IhR">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="320" y="228" width="78" height="21"/>
+                                </variation>
+                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LJp-4k-d1e" customClass="GLKView">
                                 <rect key="frame" x="50" y="280" width="150" height="150"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -111,7 +138,7 @@
                                 </accessibility>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="82" y="326" width="250" height="250"/>
+                                    <rect key="frame" x="100" y="326" width="200" height="200"/>
                                 </variation>
                             </view>
                         </subviews>
@@ -120,21 +147,30 @@
                             <mask key="subviews">
                                 <exclude reference="rAk-Ub-kgM"/>
                                 <exclude reference="Ciq-zq-wO0"/>
+                                <exclude reference="lSa-Eg-6Vf"/>
+                                <exclude reference="bWN-yf-taB"/>
+                                <exclude reference="2CJ-A6-IhR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="rAk-Ub-kgM"/>
                                 <include reference="Ciq-zq-wO0"/>
+                                <include reference="lSa-Eg-6Vf"/>
+                                <include reference="bWN-yf-taB"/>
+                                <include reference="2CJ-A6-IhR"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="bLabel" destination="2CJ-A6-IhR" id="FLi-Vq-BRL"/>
                         <outlet property="blueControl" destination="9qW-vq-b5M" id="lqX-DV-pA0"/>
                         <outlet property="colorView" destination="LJp-4k-d1e" id="o1F-cw-tRr"/>
+                        <outlet property="gLabel" destination="bWN-yf-taB" id="Y8O-SD-7RZ"/>
                         <outlet property="greenControl" destination="O6B-X0-dve" id="7mL-5D-027"/>
                         <outlet property="instructionalLabel" destination="rAk-Ub-kgM" id="RXl-Ek-ou5"/>
+                        <outlet property="rLabel" destination="lSa-Eg-6Vf" id="ULW-Am-dPp"/>
                         <outlet property="redControl" destination="ATF-wd-B3m" id="iHo-jq-aM5"/>
                     </connections>
                 </viewController>

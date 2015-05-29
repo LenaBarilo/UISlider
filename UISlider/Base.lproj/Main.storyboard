@@ -57,10 +57,10 @@
                                 <items>
                                     <barButtonItem title="Reset" id="iAK-VS-Aw3">
                                         <connections>
-                                            <action selector="reserColorView:" destination="vXZ-lx-hvc" id="hhu-t6-wNk"/>
+                                            <action selector="resetColorView:" destination="vXZ-lx-hvc" id="LGz-5e-ECd"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="273" style="plain" systemItem="fixedSpace" id="49Y-at-JSc"/>
+                                    <barButtonItem width="298" style="plain" systemItem="fixedSpace" id="49Y-at-JSc"/>
                                     <barButtonItem title="Share" id="6es-W0-U7y">
                                         <connections>
                                             <action selector="shareColor:" destination="vXZ-lx-hvc" id="JOc-2K-cw8"/>
